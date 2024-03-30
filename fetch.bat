@@ -10,5 +10,6 @@ curl -O -L https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.zip
 7z x nasm-2.16.01.zip
 cd ..
 
-curl -O -L curl -O -L https://github.com/openssl/openssl/archive/refs/tags/openssl-3.2.1.zip
+curl -O -L https://github.com/openssl/openssl/archive/refs/tags/openssl-3.2.1.zip
 7z x openssl-3.2.1.zip
+ren openssl-openssl-3.2.1 openssl-3.2.1
