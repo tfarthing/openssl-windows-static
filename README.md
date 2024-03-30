@@ -2,23 +2,25 @@
 
 This project was created to automate building of `openssl 3.2.1` on Windows, making only static libraries & statically linked runtime (`/MT`).
 
-Following the instructions located here:
+Based on the instructions located here:
+
 https://github.com/openssl/openssl
+and
 https://github.com/openssl/openssl/blob/master/NOTES-WINDOWS.md
 
-To build follow these steps:
+## How to Build
+
 1. open "x64 Native Tools Comman Prompt" at this project folder
 2. run `fetch.bat`
 3. run `build.bat`
 4. `libssl.lib` & `libcrypto.lib` are output to `.\openssl-3.2.1`; linking requires `crypt32.lib`
 
-## requirements
+## About Requirements
 
 ### perl
     * http://strawberryperl.com/
     * download & extract "Portable" version to /strawberry-perl
-    * e.g. `curl -O -L https://github.com/StrawberryPerl/Perl-Dist-Strawberry/releases/download/SP_53822_64bit/strawb
-erry-perl-5.38.2.2-64bit-portable.zip`
+    * e.g. `curl -O -L https://github.com/StrawberryPerl/Perl-Dist-Strawberry/releases/download/SP_53822_64bit/strawberry-perl-5.38.2.2-64bit-portable.zip`
 
 ### nasm
     * https://www.nasm.us/
